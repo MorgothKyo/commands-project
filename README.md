@@ -38,6 +38,9 @@ git config --global user.name "<username>"
 # Configure the author email address
 git config --global user.email <email-address>
 
+# Link a remote repository to local
+git remote add origin git@github.com:URL/repository.git
+
 # Create a local copy of a remote repository
 git clone git@github.com/<username>/<repository-name>.git
 
@@ -58,6 +61,15 @@ git branch <branch-name>
 
 # Switch branch
 git checkout <branch-name>
+
+# Create a branch and make it active
+git checkout -b <branch-name>
+
+# Merge a branch
+git merge <branch-name>
+
+# Delete a branch
+git branch -d
 
 # Push changes to remote repository
 git push
