@@ -18,8 +18,14 @@ ls
 # Change directory
 cd <directory-path>
 
+# Generate ssh key
+ssh-keygen -t rsa -b 4096
+
 # Connect to ssh session
 ssh <user-name>@<ip-distant-machine>
+
+# Create a user with active bash and password setup
+useradd --create-home --shell /bin/bash --password <yourpassword> <user-name>
 
 # Create a directory
 mkdir <directory-name>
@@ -117,6 +123,12 @@ docker-compose down
 # Start Services in a Docker Compose File
 docker-compose start
 
+# Start Services in a Docker Compose File in background
+docker-compose up -d
+
+# Start Services in a Docker Compose File in interactive mode
+docker-compose up -it
+
 # Stop Services in a Docker Compose File
 docker-compose stop
 
@@ -168,4 +180,5 @@ kubectl create namespace <namespace-name>
 # Create a new service with the definition contained in a [service-name].yaml file
 kubectl apply -f <file-name.yaml>
 ```
+
 
