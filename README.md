@@ -18,6 +18,36 @@ ls
 # Change directory
 cd <directory-path>
 
+# Print working directory command in Linux
+pwd
+
+# Print any text that follows the command
+echo
+
+# Delete files or directories
+rm
+
+# Create blank/empty files
+touch
+
+# Access manual pages for all Linux commands
+man
+
+# Get the active username
+whoami
+
+# Search for a string within an output
+grep
+
+# Display disk filesystem information
+df
+
+# Command to change file permissions
+chmod
+
+# Package managers depending on the distro
+apt, pacman, yum, rpm
+
 # Generate ssh key
 ssh-keygen -t rsa -b 4096
 
@@ -108,6 +138,14 @@ docker exec -ti <image-name> /bin/bash
 # Stop container
 docker stop <image-name-or-id>
 
+# Start a stopped container
+docker start <container-name-or-id>
+
+# Fetch the logs of any container
+docker logs <container-name-or-id>
+
+# Reveal low-level information about both containers and images
+docker inspect <container-or-image-name-id>
 # Remove container
 docker rm <image-name-or-id>
 ```
@@ -146,6 +184,12 @@ docker-compose images
 ```bash
 # Prepare your working directory for other commands
 terraform init
+
+# Get a list of available commands for execution with descriptions
+terraform -help
+
+# Validate the configuration files in your directory
+terraform validate
 
 # Check whether the configuration is valid
 terraform validate
